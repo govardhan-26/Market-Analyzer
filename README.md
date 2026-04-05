@@ -2,8 +2,6 @@
 
 A **multi-agent market analysis system** built on the **Supervisor (Hierarchical)** agentic architecture pattern. A central supervisor agent coordinates specialized research and analysis agents iteratively to produce comprehensive, data-driven market comparison reports.
 
-> **Part of:** [Agentic AI Architectures](https://saisrinivas-samoju.github.io/agentic_architectures/) — a collection of mini-projects demonstrating different agentic design patterns.
-
 ---
 
 ## 🏗️ Architecture — Supervisor (Hierarchical)
