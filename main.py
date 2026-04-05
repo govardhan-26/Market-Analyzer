@@ -1,7 +1,26 @@
+
 import sys
 import subprocess
-from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+
+# --- Dependency check ---
+# If running outside the project's virtual environment, required packages
+# won't be available. Give a clear message instead of a cryptic ImportError.
+try:
+    from dotenv import load_dotenv
+    from langchain_openai import ChatOpenAI
+except ImportError as _e:
+    print(
+        f"Error: Missing dependency — {_e}\n\n"
+        "This project uses 'uv' for dependency management.\n"
+        "Please run the script using one of these methods:\n\n"
+        "  uv run python main.py\n\n"
+        "Or activate the virtual environment first:\n\n"
+        "  .venv\\Scripts\\Activate.ps1   (PowerShell)\n"
+        "  .venv\\Scripts\\activate.bat   (CMD)\n\n"
+        "Then retry:  python main.py",
+        file=sys.stderr,
+    )
+    sys.exit(1)
 from langchain_core.tools import tool
 from langchain.agents import create_agent
 from langgraph_supervisor import create_supervisor
