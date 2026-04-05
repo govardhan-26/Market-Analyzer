@@ -162,6 +162,4 @@ This runs a default comparison query and prints the analysis to the terminal.
 
 ---
 
-## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
