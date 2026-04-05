@@ -156,7 +156,6 @@ This runs a default comparison query and prints the analysis to the terminal.
 
 ## 📚 Learn More
 
-- [Supervisor Architecture — Agentic AI Architectures](https://saisrinivas-samoju.github.io/agentic_architectures/architectures/supervisor/)
 - [LangGraph Supervisor Docs](https://langchain-ai.github.io/langgraph/concepts/multi_agent/#supervisor)
 - [LangChain Documentation](https://docs.langchain.com/)
 
